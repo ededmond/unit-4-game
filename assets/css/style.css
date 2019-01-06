@@ -4,6 +4,7 @@
 body {
     margin-top: 10px;
     text-align: center;
+    background-image: url("../images/cloudy-day/cloudy-day.png");
 } 
 img {
     height:148px;
@@ -20,6 +21,7 @@ img {
 }
 .card-body {
     padding:2px;
+    height:30px;
 }
 h5 {
     /* font-size: 2vw; */
@@ -27,8 +29,21 @@ h5 {
 }
 .btn{
     display: none;
+    background-color:gray;
+    border-radius: 0;
+    border:none !important; 
+    outline:none !important;
 }
-
+.btn:hover {
+    background-color:black;
+    color:white;
+    border:none;
+    outline:none;
+}
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+    outline: none;
+}
 @media screen and (min-width: 992px) {
     .container {
         width:768px;

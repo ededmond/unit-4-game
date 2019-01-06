@@ -69,6 +69,8 @@ $(document).ready(function() {
             var attack = playerChar.attack;
             opponentChar.hp -= attack;
             $("."+opponentChar.name + "-body").text(opponentChar.hp);
+            var opaque = opponentChar.hp / opponentChar.maxHp;
+            opponentChar.card.animate({ opacity: opaque.toString() },"fast")
             playerChar.attack = attack * 2;
 
             if (opponentChar.hp <= 0) {
@@ -84,6 +86,8 @@ $(document).ready(function() {
             } else {
                 playerChar.hp -= opponentChar.counterAttack;
                 $("."+playerChar.name + "-body").text(playerChar.hp);
+                opaque = playerChar.hp / playerChar.maxHp;
+                playerChar.card.animate({ opacity: opaque.toString() },"fast")
             }
             if (playerChar.hp <=0) {
                 playerChar.card.hide();
