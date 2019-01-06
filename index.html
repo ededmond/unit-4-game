@@ -2,63 +2,88 @@
 <html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
+    
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+  
   <title>Star Wars Game</title>
 
   <!-- Boostrap Stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
+  
   <!-- Our own CSS stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
 </head>
 <body>
+    
     <div class = "container">
         <section class = "row">
             <div class = "col-12">
-                <div class = "row">
+                <div class ="row">
+                    <div class = "col-6">
+                        <h3 id = "characters">Pick A Character</h3>
+                    </div>
+                    <div class = "col-6">
+                        <button type="button" class="btn btn-warning">Attack</button>
+                    </div>
+                </div>
+                
+                <div class = "row waiting">
                     <div class = "col-3">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top " src="assets/images/leia.jpg" alt="Princess Leia">
-                    <div class="card-body">
-                      <h5 class="card-title">Princess Leia</h5>
+                        <div id = "Leia" class="card" >
+                            <h5 class="card-title">Princess Leia</h5>
+                            <img class="card-img-top img-fluid" src="assets/images/leia.jpg" alt="Princess Leia">
+                            <div class="card-body Leia-body">
+                                <p>120</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-3">
+                        <div id = "Luke" class="card" >
+                            <h5 class="card-title">Luke Skywalker</h5>
+                            <img class="card-img-top img-fluid" src="assets/images/luke.jpg" alt="Luke Skywalker">
+                            <div class="card-body Luke-body">
+                                100
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-3">
+                        <div id = "Solo" class="card" >
+                            <h5 class="card-title">Han Solo</h5>
+                            <img class="card-img-top img-fluid" src="assets/images/solo.jpg" alt="Han Solo">
+                            <div class="card-body Solo-body">
+                                150
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-3">
+                        <div id = "Vader" class="card" >
+                            <h5 class="card-title">Darth Vader</h5>
+                            <img class="card-img-top img-fluid" src="assets/images/vader.jpg" alt="Darth Vader">
+                            <div class="card-body Vader-body">
+                                80
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "row Defender">
 
+                    <div class = "col-12">
+                        <h3 id = "Defender">Defender</h3>
                     </div>
-                  </div>
-            </div>
-            <div class = "col-3">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top " src="assets/images/luke.jpg" alt="Luke Skywalker">
-                    <div class="card-body">
-                      <h5 class="card-title">Luke Skywalker</h5>
-                      
+                </div>
+                <div class = "row">
+                    <div class = "col-12">
+                        <h3 id = "enemies">Enemies</h3> 
                     </div>
-                  </div>
-            </div>
-            <div class = "col-3">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top " src="assets/images/solo.jpg" alt="Han Solo">
-                    <div class="card-body">
-                      <h5 class="card-title">Han Solo</h5>
-                      
-                    </div>
-                  </div>
-            </div>
-            <div class = "col-3">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top " src="assets/images/vader.jpg" alt="Darth Vader">
-                    <div class="card-body">
-                      <h5 class="card-title">Darth Vader</h5>
-                      
-                    </div>
-                  </div>
-            </div>
                 </div>
             </div>
             
         </section>
     </div>
+    <script src="assets/javascript/script.js"></script>
 </body>
 </html>
